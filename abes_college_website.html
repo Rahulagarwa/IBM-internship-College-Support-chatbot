@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="abes.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="header-container">
             <div class="logo">
@@ -29,7 +28,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+
     <section class="hero" id="home">
         <div class="hero-container">
             <h2>Shape Your Future in Engineering</h2>
@@ -37,7 +36,7 @@
         </div>
     </section>
 
-    <!-- Programs Section -->
+
     <section class="programs" id="programs">
         <div class="container">
             <div class="section-title">
@@ -79,7 +78,7 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+
     <section class="features" id="features">
         <div class="container">
             <div class="section-title">
@@ -115,7 +114,7 @@
         </div>
     </section>
 
-    <!-- Statistics Section -->
+
     <section class="stats">
         <div class="container">
             <div class="stats-grid">
@@ -140,7 +139,7 @@
     </section>
 
 
-    <!-- Footer -->
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -192,7 +191,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -206,14 +204,13 @@
             });
         });
 
-        // Form submission handler
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for your interest! We will contact you soon.');
             this.reset();
         });
 
-        // Add animation on scroll
+      
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -227,16 +224,16 @@
             });
         }, observerOptions);
 
-        // Observe elements for animation
+        
         document.querySelectorAll('.program-card, .feature-item, .stat-item').forEach(el => {
             observer.observe(el);
         });
     </script>
     <script>
   window.watsonAssistantChatOptions = {
-    integrationID: "a381b694-b58c-4c37-895c-6690f4f173cb", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "bf628cf0-adf5-4e65-aa8a-8cc405007f37", // The ID of your service instance.
+    integrationID: "a381b694-b58c-4c37-895c-6690f4f173cb", 
+    region: "us-south", 
+    serviceInstanceID: "bf628cf0-adf5-4e65-aa8a-8cc405007f37", 
     onLoad: async (instance) => { await instance.render(); }
   };
   setTimeout(function(){
